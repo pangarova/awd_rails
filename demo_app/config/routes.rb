@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # resources :line_items
+
   get 'say/hello'
 
   get 'say/goodbye'
