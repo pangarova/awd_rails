@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::Base
-  before_action :autorize
+  before_action :authorize
+  protect_from_forgery with: :exception
 
-    #..
+    # ...
 
   protected
 
