@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class LineItemsControllerTest < ActionDispatch::IntegrationTest
+  skip_before_action :authorize, only: :create
   setup do
     @line_item = line_items(:one)
   end
